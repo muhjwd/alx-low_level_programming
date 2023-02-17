@@ -1,11 +1,7 @@
 #include <stdio.h>
 
-/** 
-
-
-* Description: C Program Prints a Statement and Return 0 
-
-
+/**
+ * Description: A C program that prints with put function
 */
 
 int main(void)
