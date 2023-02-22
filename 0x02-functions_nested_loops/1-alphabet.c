@@ -4,9 +4,9 @@
  * main - Entry point
  * Description: 1-alphabet.c Task
  * print_alphabet - utilizes on the _putchar function to print
- * Return: Code 0 is translated as Success!
 */
 
+// Main Function print_alphabet (void to return nothing)
 void print_alphabet(void)
 {
 	int ch;
