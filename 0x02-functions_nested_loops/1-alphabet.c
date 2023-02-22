@@ -6,7 +6,7 @@
  * print_alphabet - utilizes on the _putchar function to print
 */
 
-// Main Function print_alphabet (void to return nothing)
+
 void print_alphabet(void)
 {
 	int ch;
