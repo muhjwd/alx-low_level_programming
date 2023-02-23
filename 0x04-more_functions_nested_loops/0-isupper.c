@@ -1,3 +1,6 @@
+
+#include "main.h"
+
 /**
  * Return: 1 if its uppercase, 0 if not
 */
