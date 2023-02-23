@@ -1,6 +1,9 @@
 /**
  * _isdigit - checks if input is digit between 0 - 9
- * Return: 1 if is digit, and 0 if not
+ *
+ * @c: input
+ *
+ * Return: 1 if is digit, 0 if not
 */
 
 int _isdigit(int c)
