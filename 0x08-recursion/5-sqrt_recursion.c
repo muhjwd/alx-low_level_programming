@@ -1,15 +1,26 @@
 #include "main.h"
 
+/**
+ * _sqrt_recursion_wrapper - a wrapper that does the recursion bit
+ *
+ * @n : input number
+ * @min: minimum number to guess
+ * @max: maximum number to guess
+ *
+ * Return: square root of @n or -1
+*/
+
 int _sqrt_check(int n, int sqrt);
 int _sqrt_recursion(int n);
 
 /**
- * _sqrt_check - checks if the square root exists
- * @n: the number to calculate the natural square root
- * @sqrt: the sqrt to check
+ * _sqrt_recursion - a function that returns the natural
+ *                   square root of a number
  *
- * Return: the sqrt if found, else -1
- */
+ * @n: input number
+ *
+ * Return: square root
+*/
 
 int _sqrt_check(int n, int sqrt)
 {
