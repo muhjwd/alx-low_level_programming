@@ -9,9 +9,9 @@
 
 int _strlen_recursion(char *s)
 {
-	if (*s == '\0')
-		return (0);
-	return (_strlen_recursion(s + 1) + 1);
+    if (*s == '\0')
+        return (0);
+    return (_strlen_recursion(s + 1) + 1);
 }
 
 /**
@@ -25,11 +25,11 @@ int _strlen_recursion(char *s)
 
 int is_pal_check(char *s, int end, int i)
 {
-	if (s[end] == s[i] && (i == end - 1 || i == end))
-		return (1);
-	if (s[end] != s[i])
-		return (0);
-	return (is_pal_check(s, end - 1, i + 1));
+    if (s[end] == s[i] && (i == end - 1 || i == end))
+        return (1);
+    if (s[end] != s[i])
+        return (0);
+    return (is_pal_check(s, end - 1, i + 1));
 }
 
 
@@ -42,9 +42,9 @@ int is_pal_check(char *s, int end, int i)
 
 int is_palindrome(char *s)
 {
-	int i = _strlen_recursion(s);
+    int i = _strlen_recursion(s);
 
-	if (i <= 1)
-		return (1);
-	return (is_pal_check(s, i - 1, 0));
+    if (i <= 1)
+        return (1);
+    return (is_pal_check(s, i - 1, 0));
 }
