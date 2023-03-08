@@ -1,40 +1,41 @@
 #include "main.h"
 
-/**
- * _sqrt_recursion_wrapper - a wrapper that does the recursion bit
- *
- * @n : input number
- * @min: minimum number to guess
- * @max: maximum number to guess
- *
- * Return: square root of @n or -1
-*/
-
-int _sqrt_check(int n, int sqrt);
+int find_sqrt(int num, int root);
 int _sqrt_recursion(int n);
 
-
-int _sqrt_check(int n, int sqrt)
+/**
+ * find_sqrt - Funtion that finds the natural square root of an inputted number
+ * @num: The number to find the square root
+ * @root: The root to be tested
+ * Return: If the number has a natural square root - the square root.
+ * If the number does not have a natural square root - -1.
+ */
+int find_sqrt(int num, int root)
 {
-	if (sqrt > n)
+	if ((root * root) == num)
+		return (root);
+
+	else if (root == num / 2)
 		return (-1);
-	if (sqrt * sqrt == n)
-		return (sqrt);
-	return (_sqrt_check(n, sqrt + 1));
+
+	return (find_sqrt(num, root + 1));
 }
 
 /**
- * _sqrt_recursion - a function that returns the natural
- *                   square root of a number
- *
- * @n: input number
- *
- * Return: square root
-*/
-
+ * _sqrt_recursion - Returns the natural square root of a number
+ * @n: The number to return the square root of
+ * Return: If n has a natural square root - the natural square root of n
+ * If n does not have a natural square root - -1
+ */
 int _sqrt_recursion(int n)
 {
+	int root = 0;
+
 	if (n < 0)
 		return (-1);
-	return (_sqrt_check(n, 0));
+
+	else if (n == 1)
+		return (1);
+
+	return (find_sqrt(n, root));
 }
