@@ -13,14 +13,6 @@
 int _sqrt_check(int n, int sqrt);
 int _sqrt_recursion(int n);
 
-/**
- * _sqrt_recursion - a function that returns the natural
- *                   square root of a number
- *
- * @n: input number
- *
- * Return: square root
-*/
 
 int _sqrt_check(int n, int sqrt)
 {
@@ -32,11 +24,13 @@ int _sqrt_check(int n, int sqrt)
 }
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: the number to calculate the natural square root
+ * _sqrt_recursion - a function that returns the natural
+ *                   square root of a number
  *
- * Return: the natural square root of a number
- */
+ * @n: input number
+ *
+ * Return: square root
+*/
 
 int _sqrt_recursion(int n)
 {
