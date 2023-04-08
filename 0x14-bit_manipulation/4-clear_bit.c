@@ -6,7 +6,7 @@
  * @n: the number we want to set value to 0
  * @index: the index of the bit that we want
  *
- * Returns: 1 if it worked, or -1 if an error occurred
+ * Returns: 1 if worked, or -1 if there is an error
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
