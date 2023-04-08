@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * 1-print_binary - a function to handle the print binary
+ * print_binary_rec - a function that handle the print binary
  *
- * Prototype: void print_binary(unsigned long int n)
  * @n: the number to print in binary
  */
 
@@ -17,9 +16,8 @@ void print_binary_rec(unsigned long int n)
 }
 
 /**
- * print_binary - a function prints the binary representation of a number
+ * print_binary - a function that prints the binary representation of a number
  *
- * Prototype: void print_binary(unsigned long int n)
  * @n: the number to print in binary
  */
 
