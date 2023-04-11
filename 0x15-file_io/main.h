@@ -1,5 +1,3 @@
-#main file for the project
-
 #ifndef MAIN_H
 #define MAIN_H
 
